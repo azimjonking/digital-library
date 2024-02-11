@@ -12,3 +12,30 @@ body {
   width: 100%;
   min-height: 100vh;
 }
+
+:root {
+
+  /* typography */
+
+  --h1-fs: 72px;
+  --h2-fs: 48px;
+  --h3-fs: 40px;
+  --h4-fs: 28px;
+  --h5-fs: 24px;
+  --h6-fs: 20px;
+
+  --subtitle-fs: 18px;
+  --normal-fs: 16px;
+  --small-fs: 14px;
+
+  /* colors */
+
+  --link-unactive: #9A9EA6;
+  --link-active: #4737FF;
+  --heading-clr: #181E4B;
+  --desc-clr: #5E6282;
+  --primary-clr: #4475F2;
+  --placeholder-clr: #9C9C9C;
+  --border-clr: #DEDEDE;
+
+}

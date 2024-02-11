@@ -1,0 +1,7 @@
+.main {
+    background-image: url("../../img/bg-main.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+    min-height: 100vh;
+}
