@@ -1,0 +1,72 @@
+.services {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.services-container {
+    margin-top: 90px;
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 100px;
+}
+
+.services-container .services-img {
+    width: 100%;
+    aspect-ratio: 3 / 2;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.services-container .services-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.services-container .services-info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    overflow: hidden;
+}
+
+.services-container .info-right {
+    padding-left: 10%;
+}
+
+.services-container .info-left {
+    padding-right: 10%;
+}
+
+.services-container .services-info > h4 {
+    font-size: var(--h4-fs);
+    letter-spacing: 1px;
+    font-weight: 500;
+    color: #000;
+}
+
+.services-container .services-info > h4 > span {
+    color: var(--primary-clr);
+}
+
+.services-container .services-info > p {
+    font-size: var(--normal-fs);
+    line-height: 180%;
+    letter-spacing: 1px;
+    color: var(--desc-clr);
+    font-weight: 500;
+}
+
+.services-container .services-info > .text1 {
+    margin-top: 40px;
+}
+
+.services-container .services-info > .text2 {
+    margin-top: 15px;
+}
