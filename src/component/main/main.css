@@ -1,7 +1,148 @@
 .main {
+    padding-top: 120px;
+    padding-bottom: 120px;
     background-image: url("../../img/bg-main.png");
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: right;
+    background-position: right bottom;
     min-height: 100vh;
+    display: flex;
+    justify-content: center;
 }
+.main-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+.main-info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+}
+.main-info > h1 {
+    font-size: var(--h1-fs);
+    color: var(--heading-clr);
+    letter-spacing: -2px;
+    line-height: 110%;
+}
+.main-info > h1 > span {
+    color: var(--primary-clr);
+    border-bottom: 2px solid var(--primary-clr);
+}
+
+.main-info > p {
+    font-size: var(--normal-fs);
+    color: var(--desc-clr);
+    line-height: 180%;
+}
+
+.main-info > a {
+    display: inline-block;
+    padding: 15px 30px;
+    background: var(--primary-clr);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #fff;
+    transition: all 0.3s;
+}
+
+.main-info > a:hover {
+    background: var(--heading-clr); 
+}
+.main-info > a > span{
+    font-size: var(--normal-fs);
+    line-height: 150%;
+}
+.main-info > a > ion-icon {
+    font-size: var(--normal-fs);
+    transition: all 0.3s;
+}
+
+.main-info > a:hover > ion-icon {
+    transform: translateX(2px);
+}
+.main-books {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr 1fr 0.9fr;
+    gap: 20px;
+}
+
+.main-books .book-column {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+.main-books .column-1 {
+    justify-content: end;
+}
+
+.main-books .column-2 {
+    justify-content: space-between;
+}
+.main-books .column-3 {
+    justify-content: center;
+}
+
+.main-books .book-column .book-img {
+    aspect-ratio: 2 / 3;
+    border-radius: 10px;
+    overflow: hidden;
+    animation-name: fadeImg;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-play-state: running;
+    transition: all 0.3s;
+}
+.main-books .book-column .book-img:hover {
+    animation-play-state: paused;
+}
+
+@keyframes fadeImg {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-10px);
+    }
+}
+.main-books .column-1 .book-1__img {
+    width: 100%;
+    align-self: stretch;
+    animation-delay: 0s;
+}
+
+.main-books .column-2 .book-2__img {
+    width: 80%;
+    align-self: start;
+    animation-delay: 0.3s;
+}
+
+.main-books .column-2 .book-3__img {
+    width: 60%;
+    align-self: end;
+    animation-delay: 0.6s;
+}
+.main-books .column-3 .book-4__img {
+    width: 100%;
+    align-self: start;
+    animation-delay: 0.9s;
+}
+
+.main-books .book-column img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
