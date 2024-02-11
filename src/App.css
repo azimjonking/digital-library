@@ -1,5 +1,20 @@
 .container {
     width: 100%;
-    padding-left: 80px;
-    padding-right: 80px;
+    padding-left: 120px;
+    padding-right: 120px;
+}
+
+.title {
+    font-size: var(--h2-fs);
+    line-height: 125%;
+    letter-spacing: 1px;
+    color: #000;
+    font-weight: 900;
+}
+
+.subtitle {
+    font-size: var(--h6-fs);
+    font-weight: 900;
+    color: var(--primary-clr);
+    letter-spacing: 2px;
 }
