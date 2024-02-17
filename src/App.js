@@ -1,23 +1,27 @@
-import React from 'react';
-import './App.css';
+import React from "react";
+import { Routes, Route } from "react-router-dom";
+import "./App.css";
 // import Header from './component/header/Header';
-import Main from './component/main/Main';
-import Features from './component/features/Features';
-import Services from './component/services/Services';
-import Reviews from './component/reviews/Reviews';
-import Location from './component/location/Location';
-import Footer from './component/footer/Footer';
+import Home from "./pages/Home/Home";
+import Error from "./component/error/Error";
+import Connection from "./component/connection/Connection";
+import NoFound from "./component/noFound/NoFound";
+import Loading from "./component/loading/Loading";
+// import Footer from "./component/footer/Footer";
 
 function App() {
   return (
     <div className="App">
       {/* <Header /> */}
-      <Main />
-      <Features />
-      <Services />
-      <Reviews />
-      <Location />
-      <Footer />
+      <Routes>
+        <Route path="/" exact element={<Home />} />
+        <Route path="/error" exact element={<Error />} />
+        <Route path="/connection" exact element={<Connection />} />
+        <Route path="/nofound" exact element={<NoFound />} />
+        <Route path="/loading" exact element={<Loading />} />
+      </Routes>
+      
+      {/* <Footer /> */}
     </div>
   );
 }
